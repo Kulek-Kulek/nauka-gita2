@@ -1,0 +1,506 @@
+@import url("https://fonts.googleapis.com/cssfamily=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic");
+
+$fonts: "Montserrat", sans-serif;
+$primary: black;
+$secondary: #FFF; 
+$color-blue: #2FD1EC;
+
+
+
+header {
+	        background-color: #313234;
+	        height: 50px;
+        }
+        
+        
+       > nav ul {
+                    margin: 0;
+	                  padding: 0;
+	                  list-style-type: none;
+	                  float: right;
+       }
+        
+        > li {
+              display: inline-block;
+       }
+        
+        > a {
+	            line-height: 50px;
+	            padding: 0 20px;
+	            display: block;
+	            color: $secondary;
+	            text-decoration: none;
+	            text-transform: uppercase;
+              &:hover {
+	            color: $color-blue;    
+              }
+          
+      
+  
+}
+         
+
+header > nav img {
+	padding: 10px 0;
+	color: $secondary;
+}
+
+
+
+
+
+
+
+
+body {
+	margin: 0;
+	font-family: $fonts;
+}
+
+.container {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; 
+    display: table; 
+    clear: both;
+}
+.hero {
+	background-image: url(https://images.unsplash.com/photo-1492272516813-79222ea82fe3?w=1647);
+	width: 100%;
+	height: 1100px;
+}
+
+.slogan {
+	width: 800px;
+	float: right;
+	background-color: rgba(10, 9, 9, 0.5);	
+	margin-top: 800px;
+	padding: 0;
+}
+
+.sloganheading {
+  color: $secondary;
+	font-size: 36px;
+	text-transform: uppercase;
+  font-weight: bold;
+}
+
+.slogan h1 {
+  @extend .sloganheading;
+	margin: 20px 50px 20px 0;
+	text-align: right;
+}
+
+.slogan h2 {
+	@extend .sloganheading;
+  margin: 20px;
+}
+
+* {
+	box-sizing: border-box;
+}
+	
+.row:before, 
+.row:after {
+	content:"";
+	display: table;
+	clear: both;	
+}
+		
+[class*="col-"]{
+	float:left;
+	min-height:1px;
+ }
+
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+.col-offset-0 {margin-left: 0;}
+.col-offset-1 {margin-left: 8.33%;}
+.col-offset-2 {margin-left: 16.66%;}
+.col-offset-3 {margin-left: 25%;}
+.col-offset-4 {margin-left: 33.33%;}
+.col-offset-5 {margin-left: 41.66%;}
+.col-offset-6 {margin-left: 50%;}
+.col-offset-7 {margin-left: 58.33%;}
+.col-offset-8 {margin-left: 66.66%;}
+.col-offset-9 {margin-left: 75%;}
+.col-offset-10 {margin-left: 83.33%;}
+.col-offset-11 {margin-left: 91.66%;}
+
+
+section>.container {
+	margin:	50px auto;
+	text-align: center;
+}
+
+.fa-globe, .fa-cogs {
+	font-size: 100px;
+	color: $secondary;
+	background-color: black;
+	width:140px;
+	height: 140px;
+	text-align: center;
+	line-height: 140px;
+	border-radius: 10px;
+}
+
+.fa-laptop {
+	@extend .fa-cogs;
+	background-color: #00C7E8;
+}
+
+
+p {
+	text-align: center;
+  color: $primary;
+}
+
+h3, h4, h5 {
+	font-size: 18px;
+	font-weight: bold;
+	text-transform: uppercase;
+  @extend p;
+}
+
+
+
+
+
+h6 {
+	font-size: 30px;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin: 0px;
+  color: $primary;
+}
+
+.gallery img {
+	width: 100%;
+	display: block;
+}
+
+.image {
+	background-image: url(https://cdn.pixabay.com/photo/2017/02/21/09/01/clouds-2085111__340.jpg);
+	border-radius: 50%;
+	width:180px;
+	height:180px;
+	background-size: cover;
+  	border-radius: 50%;	
+  	position: relative;
+  	margin-left: 55px;
+}
+
+  
+.team h5 {
+	font-size: 15px;
+	position: absolute;
+  	top: 30%;
+    font-weight: bold;
+    width: 100%; 
+  color: $primary;
+}
+
+.team h4 {
+	@extend p;
+  font-size: 15px;
+	margin-left: 0;
+}
+
+
+.no {
+	font-weight: bold;
+	font-size:45px;
+	
+}
+
+
+
+footer {
+	background-color: #313332;
+	color: $secondary;
+	margin-top:30px;
+}
+
+.copyrights {
+	text-align: center;
+	background-color: #252726;
+	padding: 50px, 50;
+	margin-top: 30px;
+}
+
+
+.icon-btn {
+	width: 35px;
+	height: 35px;
+	border: 0;
+	background-color: #FFFFFF;
+	border-radius: 50%;
+	margin: 5px;
+	cursor: pointer;
+	font-size: 18px;
+}
+
+.twitter {
+	color: #4099FF;
+}
+
+.facebook {
+	color: #3B5998;
+}
+
+.google-plus {
+	color: #DB5A3C;
+}
+
+.instagram {
+	color: #5C3D2E;
+}
+
+.github {
+	color: #4183C4;
+}
+
+.icon-btn:hover {
+	transform: scale(1.60);
+}
+
+.twitter:hover {
+	background-color: #4099FF;
+	color: $secondary;
+}
+
+.facebook:hover {
+	background-color: #3B5998;
+	color: $secondary;
+}
+
+.google-plus:hover {
+	background-color: #DB5A3C;
+	color: $secondary;
+}
+
+.instagram:hover {
+	background-color: #5C3D2E;
+	color: $secondary;
+}
+
+.github:hover {
+	background-color: #4183C4;
+	color: $secondary;
+}
+
+.youtube:hover {
+	background-color: red;
+	color: $secondary;
+}
+
+.socialmedia {
+	text-align: center;
+}
+
+
+.aboutus, .touch, .socialmedia, .research, .custom, .work, .text1, .text2{
+	padding: 40px;
+}
+
+.numbers, .team, .icons, .feature, footer {
+	padding: 40px;
+}
+
+.pic13 img {
+	display:block;
+	width:100%;
+}
+
+.promotion {
+	padding: 40px;
+	background-image: url(https://images.unsplash.com/photo-1482977036925-e8fcaa643657?w=634&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D);
+	margin-top: 120px;
+}
+
+.copyrights {
+	padding:15px;
+}
+
+.layer {
+	display: none;
+}
+
+.gallery .col-2:hover .layer {
+	display: block;
+	background: rgba(0,0,0, 0.5);
+}
+
+.feature h2 {
+	@extend p;
+}
+
+.custom h3 {
+	color:#00C7E8;
+}
+
+
+
+.no h5 {
+  color: $primary;
+}
+
+
+.numbers h6 {
+	color:$color-blue;
+	font-size: 18px;
+}
+
+
+	
+.aboutus h6, .touch h6, .socialmedia h6 {
+	text-align: left;
+	font-size: 35px;
+	font-weight: bold;
+	font-variant: small-caps;
+	color: $secondary;
+}
+
+.aboutus p, .socialmedia p, .touch p {
+	padding: 30px 0;
+  color: $secondary;
+	}
+
+.copyrights h6 {
+	font-size: 15px;
+}
+
+.aboutus p, .socialmedia , .touch p {
+	text-align: left;
+  color: $secondary;;
+}
+
+.awesome h5 {
+	font-size: 35px;
+	@extend p;
+}
+
+
+
+@media (max-width: 768px) {
+
+	[class*="col-"] {
+    width: 100%;
+    padding: 12px;
+   float:left;
+}
+
+	.col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+
+	
+		
+	
+	header > nav ul {
+	float: none;
+	}
+
+	header {
+		width: auto;
+		height: auto;
+	}
+				
+	header > nav ul > li {
+  	display: block;
+  	text-align: center;
+	}
+
+
+	header > nav img {
+		text-align: center;
+		display: block;
+	}
+	
+	.hero {
+		background-image: url(https://images.unsplash.com/photo-1492272516813-79222ea82fe3?w=1647);
+		width: 100%;
+		
+		
+	}
+	
+	.staff h4 {
+		text-align: center;
+	}
+	
+
+
+	.social {
+		text-align: center;
+	}
+	
+	.aboutus h6, .touch h6, .socialmedia h6 {
+	text-align: center;
+	font-size: 1rem;
+	font-weight: bold;
+	color: #fff;
+	}
+	
+	.aboutus p, .socialmedia, .touch p {
+	font-size: 0.8em;
+	}
+	
+		footer {
+		width: auto;
+		height: auto;
+	}
+	
+	.copyrights h6 {
+	font-size: 0.7rem;
+	}
+	
+	.layer {
+	display: block;
+	}
+	
+	.slogan h1, .slogan h2 {
+		font-size: 0.8rem;
+		text-align: right;
+	}
+	
+	.awesome h5 {
+		font-size: 0.9rem;
+	}
+	
+	.text1 p, .text2 p {
+	font-size: 0.8em;
+	text-align: center;
+	}
+	
+	
+	.image {
+	margin: 0 auto;
+	}
+}
